@@ -7,9 +7,9 @@ const buttonThree = document.getElementById('button3');
 const imgOne = document.getElementById('img1');
 const imgTwo = document.getElementById('img2');
 const imgThree = document.getElementById('img3');
-const wins = document.getElementById('wins');
-const losses = document.getElementById('losses');
-const total = document.getElementById('total');
+const winsEl = document.getElementById('wins');
+const lossesEl = document.getElementById('losses');
+const totalEl = document.getElementById('total');
 
 /* State */
 let wins = 0;
@@ -36,10 +36,10 @@ buttonTwo.addEventListener('click', () => {
     total++;
     const genRandCup = Math.floor(Math.random() * 3);
     if (genRandCup === 0) {
-        wins++;
         imgOne.src = './assets/correct-cup.png';
     } else if (genRandCup === 1) {
         imgTwo.src = './assets/correct-cup.png';
+        wins++;
     } else {
         imgThree.src = './assets/correct-cup.png';
     }
@@ -51,12 +51,12 @@ buttonThree.addEventListener('click', () => {
     total++;
     const genRandCup = Math.floor(Math.random() * 3);
     if (genRandCup === 0) {
-        wins++;
         imgOne.src = './assets/correct-cup.png';
     } else if (genRandCup === 1) {
         imgTwo.src = './assets/correct-cup.png';
     } else {
         imgThree.src = './assets/correct-cup.png';
+        wins++;
     }
     displayScores();
 });
@@ -68,9 +68,9 @@ function resetImg() {
 }
 
 function displayScores() {
-    wins.textContent = wins;
-    losses.textContent = total - wins;
-    total.textContent = total;
+    winsEl.textContent = wins;
+    lossesEl.textContent = total - wins;
+    totalEl.textContent = total;
 }
 
 // (don't forget to call any display functions you want to run on page load!)
