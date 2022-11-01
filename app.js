@@ -16,7 +16,20 @@ let wins = 0;
 let total = 0;
 
 /* Events */
-
+buttonOne.addEventListener('click', () => {
+    resetImg();
+    total++;
+    const genRandCup = Math.floor(Math.random() * 3);
+    if (genRandCup === 0) {
+        wins++;
+        imgOne.src = './assets/correct-cup.png';
+    } else if (genRandCup === 1) {
+        imgTwo.src = './assets/correct-cup.png';
+    } else {
+        imgThree.src = './assets/correct-cup.png';
+    }
+    displayScores();
+});
 /* Display Functions */
 function resetImg() {
     imgOne.src = './assets/cup.png';
