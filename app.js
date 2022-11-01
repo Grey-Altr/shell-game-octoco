@@ -15,6 +15,9 @@ const total = document.getElementById('total');
 let wins = 0;
 let total = 0;
 
+/* Events */
+
+/* Display Functions */
 function resetImg() {
     imgOne.src = './assets/cup.png';
     imgTwo.src = './assets/cup.png';
@@ -26,9 +29,5 @@ function displayScores() {
     losses.textContent = total - wins;
     total.textContent = total;
 }
-
-/* Events */
-
-/* Display Functions */
 
 // (don't forget to call any display functions you want to run on page load!)
