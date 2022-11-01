@@ -25,11 +25,36 @@
     <body>
         <header>
             <img class="logo" src="assets/html_css_js.png" alt="logo" />
-            <h1>Web App</h1>
+            <h1>Cup Game</h1>
         </header>
 
         <main>
-            <section></section>
+            <section class="cup-section">
+                <div class="cup-card">
+                    <img src="./assets/cup.png" />
+                    <div>
+                        <button>This Cup</button>
+                    </div>
+                </div>
+                <div class="cup-card">
+                    <img src="./assets/cup.png" />
+                    <div>
+                        <button>This Cup</button>
+                    </div>
+                </div>
+                <div class="cup-card">
+                    <img src="./assets/cup.png" />
+                    <div>
+                        <button>This Cup</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="score-section">
+                <div class="score-stat">wins: <span id="wins">0</span></div>
+                <div class="score-stat">losses: <span id="losses">0</span></div>
+                <div class="score-stat">total: <span id="total">0</span></div>
+            </section>
         </main>
     </body>
 </html>
