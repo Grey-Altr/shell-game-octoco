@@ -9,7 +9,7 @@ body {
     font-family: var(--primary-font);
     background: var(--background);
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -19,6 +19,7 @@ header {
     height: 80px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 
@@ -31,5 +32,27 @@ header .logo {
 }
 
 main {
+    padding: 20px;
+}
+
+.cup-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.score-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }

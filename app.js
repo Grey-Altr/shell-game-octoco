@@ -1,5 +1,7 @@
 /* Imports */
-
+const buttonOne = document.getElementById('button1');
+const buttonTwo = document.getElementById('button2');
+const buttonThree = document.getElementById('button3');
 /* Get DOM Elements */
 
 /* State */
